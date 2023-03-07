@@ -1,6 +1,6 @@
 
 # Hair removal on HAM10000
-This script eliminates hairs visible on images from the HAM10000 dataset. 
+This script eliminates hairs from images from the HAM10000 dataset. The algorithm can be tweaked with the variables
 
 # Prerequisites 
 
@@ -12,6 +12,7 @@ This script eliminates hairs visible on images from the HAM10000 dataset.
 # Installation
 
 This script requires the opencv library
+
 `pip install opencv-python`
 
 # Usage
@@ -19,8 +20,10 @@ This script requires the opencv library
 Open the file `patch_hairs.ipynb` from a Jupyter notebook IDE<br>
 
 Define variables if necessary<br>
+
 Run all cells
-All necessary functions are stored in `functions.py`
+
+*All necessary functions are stored in `functions.py`*
 
 # Method
 1. Edge detection
@@ -86,7 +89,7 @@ Currently the patching works best with a low amount of hairs. Though improving t
 
 # Conclusion
 
-The script can check if it's worth to remove and patch the hair regions, then it can save the patched image in the destination folder. 
+The algorithm checks which images to patch, then it saves the patched image in the destination folder. 
 
 # Contributors
 
