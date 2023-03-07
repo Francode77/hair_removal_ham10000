@@ -47,14 +47,14 @@ max_std_dev_cap=0.30 # Even distribution below this threshold<br>
 max_variance_cap=0.10 # Even distribution below this threshold<br>
 max_hist_variance=30 # Maximum allowed density history variance
 
-# 
+# Settings
 The script checks for parameters to know whether the detections are ok to be processed
 
-On the density:<br>
-Variance<br>
-Standard deviation<br>
-On the density histogram:<br>
-Density histogram variance<br>
+**On the density:**<br>
+- Variance<br>
+- Standard deviation<br>
+**On the density histogram:**<br>
+- Density histogram variance<br>
  - maximum is not greater than max_hist_variance
  - if max density is higher than max_density_cap : max_hist_variance_cap
 
