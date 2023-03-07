@@ -67,11 +67,14 @@ Parameters to decide whether the detections are ok to be processed
 | max_hist_variance  |  Maximum allowed density history variance |
 
 # Method
+
+See my [article on medium]() for more explanation
+
 1. Edge detection
 2. Line detection
 3. Coordinates
 4. Distribution check:
-
+<p>
 **Max lines:**<br>
 - Maximum number of lines for passing a density check
 
@@ -80,10 +83,8 @@ Parameters to decide whether the detections are ok to be processed
 - Standard deviation check<br>
 
 **On the density histogram:**<br>
-- Density histogram variance must<br>
- - never greater than max_hist_variance
- - never be greater than max_hist_variance_cap if max_density is higher than max_density_cap 
-
+- Density histogram variance check<br> 
+</p>
 5. Patching
 
 # Results
@@ -102,10 +103,6 @@ Currently the patching works best with a low amount of hairs. Though improving t
 - Settings can be further improved for better results
 - The algo does not patch at distances smaller than (r) from the edges
 - The patch function can be improved
-
-# Conclusion
-
-
 
 # Contributors
 
