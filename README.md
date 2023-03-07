@@ -16,7 +16,9 @@ This script requires the opencv library
 
 # Usage
 
-Run the file `patch_hairs.ipynb` from a Jupyter notebook IDE<br>
+Open the file `patch_hairs.ipynb` from a Jupyter notebook IDE<br>
+Define variables if necessary<br>
+Run all cells
 All necessary functions are stored in `functions.py`
 
 # Method
@@ -31,28 +33,29 @@ The following variables can be chosen freely:
 
 #### Declare width and height of the patches
 r = 6
+
 #### Canny thresholds
-canny_A=100 
+canny_A=100 <br>
 canny_B=100
 
 #### Image processing thresholds
-max_lines_cap=99 # Check density above this cap
-max_density_cap=123 # Check density history variance above this cap
-max_hist_variance_cap=5 # Even distribution below this threshold
-max_std_dev_cap=0.30 # Even distribution below this threshold
-max_variance_cap=0.10 # Even distribution below this threshold
+max_lines_cap=99 # Check density above this cap<br>
+max_density_cap=123 # Check density history variance above this cap<br>
+max_hist_variance_cap=5 # Even distribution below this threshold<br>
+max_std_dev_cap=0.30 # Even distribution below this threshold<br>
+max_variance_cap=0.10 # Even distribution below this threshold<br>
 max_hist_variance=30 # Maximum allowed density history variance
 
 # Results
 
 Currently the patching works best with a low amount of hairs. Though improving the patch function will lead to better results.
 
-<p float="left">
+<p float="center">
   <img src="https://github.com/Francode77/hair_removal_ham10000/blob/main/assets/OISIC_0024306.jpg" width="100" />
   <img src="https://github.com/Francode77/hair_removal_ham10000/blob/main/assets/pISIC_0024306.jpg" width="100" /> 
   <img src="https://github.com/Francode77/hair_removal_ham10000/blob/main/assets/ISIC_0024306.jpg" width="100" />
 </p> 
-* on the left: the unprocessed image, center: the detected lines, right: the patched image*
+*on the left: the unprocessed image, center: the detected lines, right: the patched image*
 
 # Limitations
 
