@@ -53,10 +53,11 @@ The script checks for parameters to know whether the detections are ok to be pro
 **On the density:**<br>
 - Variance<br>
 - Standard deviation<br>
+
 **On the density histogram:**<br>
 - Density histogram variance<br>
- - maximum is not greater than max_hist_variance
- - if max density is higher than max_density_cap : max_hist_variance_cap
+ - never greater than max_hist_variance
+ - if max_density is higher than max_density_cap : max_hist_variance_cap
 
 
 # Results
