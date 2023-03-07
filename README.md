@@ -47,7 +47,12 @@ max_hist_variance=30 # Maximum allowed density history variance
 
 Currently the patching works best with a low amount of hairs. Though improving the patch function will lead to better results.
 
-![image](https://user-images.githubusercontent.com/113235815/219980203-56757dcb-8f38-4348-ba62-97c13a7a3472.png)
+<p float="left">
+  <img src="https://github.com/Francode77/hair_removal_ham10000/blob/main/assets/OISIC_0024306.jpg" width="100" />
+  <img src="https://github.com/Francode77/hair_removal_ham10000/blob/main/assets/pISIC_0024306.jpg" width="100" /> 
+  <img src="https://github.com/Francode77/hair_removal_ham10000/blob/main/assets/ISIC_0024306.jpg" width="100" />
+</p> 
+* on the left: the unprocessed image, center: the detected lines, right: the patched image*
 
 # Limitations
 
