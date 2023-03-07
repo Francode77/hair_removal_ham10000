@@ -32,20 +32,28 @@ All necessary functions are stored in `functions.py`
 # Choose the variables
 The following variables can be chosen freely:
 
-#### Declare width and height of the patches
+#### Set width and height of the patches
 r = 6
 
-#### Canny thresholds
+#### Set canny thresholds
 canny_A=100 <br>
 canny_B=100
 
+#### Set HoughlinesP parameters
+hough_method     = 'cv2.HOUGH_PROBABILISTIC' <br>
+hough_resolution = 720   # the resolution of rho in degrees) <br>
+hough_threshold  = 35    # number of required votes) <br>
+hough_min_length = 1     # the minimum line length) <br>
+hough_max_gap    = 15    # maximum allowed gap) <br>
+hough_iter       = 16    # number of iterations)
+
 #### Image patching thresholds
-max_lines_cap=99 # Check density above this cap<br>
-max_density_cap=123 # Check density history variance above this cap<br>
-max_hist_variance_cap=5 # Even distribution below this threshold<br>
-max_std_dev_cap=0.30 # Even distribution below this threshold<br>
-max_variance_cap=0.10 # Even distribution below this threshold<br>
-max_hist_variance=30 # Maximum allowed density history variance
+max_lines_cap         = 99      # Check density above this cap<br>
+max_density_cap       = 123     # Check density history variance above this cap<br>
+max_hist_variance_cap = 5       # Even distribution below this threshold<br>
+max_std_dev_cap       = 0.30    # Even distribution below this threshold<br>
+max_variance_cap      = 0.10    # Even distribution below this threshold<br>
+max_hist_variance     = 30      # Maximum allowed density history variance
 
 # Settings
 The script checks for parameters to know whether the detections are ok to be processed
