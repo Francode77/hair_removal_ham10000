@@ -74,7 +74,7 @@ See my [article on medium]() for more explanation
 2. Line detection
 3. Coordinates
 4. Distribution check:
-<p>
+
 **Max lines:**<br>
 - Maximum number of lines for passing a density check
 
@@ -84,7 +84,7 @@ See my [article on medium]() for more explanation
 
 **On the density histogram:**<br>
 - Density histogram variance check<br> 
-</p>
+  
 5. Patching
 
 # Results
