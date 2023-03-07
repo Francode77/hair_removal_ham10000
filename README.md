@@ -17,6 +17,7 @@ This script requires the opencv library
 # Usage
 
 Open the file `patch_hairs.ipynb` from a Jupyter notebook IDE<br>
+
 Define variables if necessary<br>
 Run all cells
 All necessary functions are stored in `functions.py`
@@ -38,13 +39,25 @@ r = 6
 canny_A=100 <br>
 canny_B=100
 
-#### Image processing thresholds
+#### Image patching thresholds
 max_lines_cap=99 # Check density above this cap<br>
 max_density_cap=123 # Check density history variance above this cap<br>
 max_hist_variance_cap=5 # Even distribution below this threshold<br>
 max_std_dev_cap=0.30 # Even distribution below this threshold<br>
 max_variance_cap=0.10 # Even distribution below this threshold<br>
 max_hist_variance=30 # Maximum allowed density history variance
+
+# 
+The script checks for parameters to know whether the detections are ok to be processed
+
+On the density:<br>
+Variance<br>
+Standard deviation<br>
+On the density histogram:<br>
+Density histogram variance<br>
+ - maximum is not greater than max_hist_variance
+ - if max density is higher than max_density_cap : max_hist_variance_cap
+
 
 # Results
 
@@ -58,11 +71,13 @@ Currently the patching works best with a low amount of hairs. Though improving t
 *on the left: the unprocessed image, center: the detected lines, right: the patched image*
 
 # Limitations
+- Function parameters can be further improved for better sensitivity
+- The algo does not patch at distances smaller than (r) from the edges
+- The patch function is very basic and can be improved
 
- 
 # Conclusion
 
-While this script is by all means not intended to predict the price of a crypto asset, it clearly demonstrates the power of the tsfresh automated feature extraction library.
+The script can check if it's worth to remove and patch the hair regions, then it can save the patched image in the destination folder. 
 
 # Contributors
 
