@@ -5,7 +5,7 @@ This script eliminates hairs from images from the HAM10000 dataset. The algorith
 # Prerequisites 
 
 - Python 3.x
-- HAM10000 dataset 
+- HAM10000 dataset must be loaded in folder `/data/HAM10000`
 *The dataset can be downloaded from Kaggle: [Skin Cancer MNIST: HAM10000
 ](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000)*
 
@@ -25,20 +25,13 @@ Run all cells
 
 *All necessary functions are stored in `functions.py`*
 
-# Method
-1. Edge detection
-2. Line detection
-3. Coordinates
-4. Density distribution
-5. Patching
-
-# Choose the variables
-The following variables can be chosen freely:
+# Settings
+The following parameters can be set:
 
 #### Set width and height of the patches
 r = 6
 
-#### Set canny parameters
+#### Set Canny parameters
 
 | parameter | description |
 | :-- | :--- | 
@@ -48,9 +41,10 @@ r = 6
 | L2gradient | L2gradient  | 
 
 #### Set HoughlinesP parameters
+
 | parameter | description |
-| hough_method     |  'cv2.HOUGH_PROBABILISTIC' | 
 | :-- | :--- | 
+| hough_method     |  'cv2.HOUGH_PROBABILISTIC' | 
 | hough_resolution |    the resolution of rho in degrees | 
 | hough_threshold  |    number of required votes | 
 | hough_min_length |    the minimum line length | 
@@ -58,6 +52,8 @@ r = 6
 | hough_iter       |    number of iterations | 
 
 #### Image patching thresholds
+Parameters to decide whether the detections are ok to be processed
+
 | threshold | description |
 | :-- | :--- | 
 | max_lines_cap  | Check density above this cap |
@@ -67,18 +63,25 @@ r = 6
 | max_variance_cap  |  Even distribution below this threshold |
 | max_hist_variance  |  Maximum allowed density history variance |
 
-# Settings
-The script checks for parameters to know whether the detections are ok to be processed
+# Method
+1. Edge detection
+2. Line detection
+3. Coordinates
+4. Distribution check:
+
+**Max lines:**<br>
+- Maximum number of lines for passing a density check
 
 **On the density:**<br>
-- Variance<br>
-- Standard deviation<br>
+- Variance check<br>
+- Standard deviation check<br>
 
 **On the density histogram:**<br>
-- Density histogram variance<br>
+- Density histogram variance must<br>
  - never greater than max_hist_variance
- - if max_density is higher than max_density_cap : max_hist_variance_cap
+ - never be greater than max_hist_variance_cap if max_density is higher than max_density_cap 
 
+5. Patching
 
 # Results
 
@@ -92,9 +95,9 @@ Currently the patching works best with a low amount of hairs. Though improving t
 *on the left: the unprocessed image, center: the detected lines, right: the patched image*
 
 # Limitations
-- Function parameters can be further improved for better sensitivity
+- Settings can be further improved for better results
 - The algo does not patch at distances smaller than (r) from the edges
-- The patch function is very basic and can be improved
+- The patch function can be improved
 
 # Conclusion
 
