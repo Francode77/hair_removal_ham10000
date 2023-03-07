@@ -1,11 +1,11 @@
 
 # Hair removal on HAM10000
-This script eliminates hairs from images from the HAM10000 dataset. The algorithm can be tweaked with the variables
+This script eliminates hairs from images from the HAM10000 dataset. The algorithm can be tweaked with the settings.
 
 # Prerequisites 
 
 - Python 3.x
-- HAM10000 dataset must be loaded in folder `/data/HAM10000`
+- HAM10000 dataset must be loaded in folder `/data/HAM10000`<br>
 *The dataset can be downloaded from Kaggle: [Skin Cancer MNIST: HAM10000
 ](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000)*
 
@@ -92,6 +92,7 @@ Currently the patching works best with a low amount of hairs. Though improving t
   <img src="https://github.com/Francode77/hair_removal_ham10000/blob/main/assets/pISIC_0024306.jpg" width="100" /> 
   <img src="https://github.com/Francode77/hair_removal_ham10000/blob/main/assets/ISIC_0024306.jpg" width="100" />
 </p> 
+
 *on the left: the unprocessed image, center: the detected lines, right: the patched image*
 
 # Limitations
