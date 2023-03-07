@@ -38,27 +38,34 @@ The following variables can be chosen freely:
 #### Set width and height of the patches
 r = 6
 
-#### Set canny thresholds
-canny_A=100 <br>
-canny_B=100
+#### Set canny parameters
+
+| parameter | description |
+| :-- | :--- | 
+| canny_A  | threshold1 | 
+| canny_B  | threshold2 | 
+| aperture   | aperture size for the Sobel operator | 
+| L2gradient | L2gradient  | 
 
 #### Set HoughlinesP parameters
-
+| parameter | description |
 | hough_method     |  'cv2.HOUGH_PROBABILISTIC' | 
 | :-- | :--- | 
-| hough_resolution |    # the resolution of rho in degrees) | 
-| hough_threshold  |     # number of required votes) | 
-| hough_min_length |      # the minimum line length) | 
-| hough_max_gap    |     # maximum allowed gap) | 
-| hough_iter       |     # number of iterations) | 
+| hough_resolution |    the resolution of rho in degrees | 
+| hough_threshold  |    number of required votes | 
+| hough_min_length |    the minimum line length | 
+| hough_max_gap    |    maximum allowed gap | 
+| hough_iter       |    number of iterations | 
 
 #### Image patching thresholds
-| max_lines_cap         = 99      # Check density above this cap<br>
-| max_density_cap       = 123     # Check density history variance above this cap<br>
-| max_hist_variance_cap = 5       # Even distribution below this threshold<br>
-| max_std_dev_cap       = 0.30    # Even distribution below this threshold<br>
-| max_variance_cap      = 0.10    # Even distribution below this threshold<br>
-| max_hist_variance     = 30      # Maximum allowed density history variance
+| threshold | description |
+| :-- | :--- | 
+| max_lines_cap  | Check density above this cap |
+| max_density_cap  | Check density history variance above this cap |
+| max_hist_variance_cap  |  Even distribution below this threshold |
+| max_std_dev_cap  |  Even distribution below this threshold |
+| max_variance_cap  |  Even distribution below this threshold |
+| max_hist_variance  |  Maximum allowed density history variance |
 
 # Settings
 The script checks for parameters to know whether the detections are ok to be processed

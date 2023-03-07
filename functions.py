@@ -191,7 +191,7 @@ def hair_removal(image, **kwargs):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
     # Apply canny edge detection
-    edges= cv2.Canny(gray,kwargs.get("canny_A"), kwargs.get("canny_B"))
+    edges= cv2.Canny(gray,kwargs.get("canny_A"), kwargs.get("canny_B"), kwargs.get("aperture"), kwargs.get("L2gradient"))
     plt.imshow(edges,cmap = 'gray')
     plt.show()
     
