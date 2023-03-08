@@ -17,7 +17,7 @@ This script requires the opencv library.
 
 # Includes
 
-`patch_hairs.ipynb` - runs the script
+`patch_hairs.ipynb` - runs the script<br>
 `functions.py` - necessary functions
 
 # Usage
