@@ -89,9 +89,7 @@ See my [article on medium](https://medium.com/@francode77/hair-removal-from-the-
 
 # Results
 
-Currently the patching works best with a low amount of hairs. 
-
-Example image ISIC_0024306.jpg
+Example image: ISIC_0024306.jpg
 
 <p float="center">
   <img src="https://github.com/Francode77/hair_removal_ham10000/blob/main/assets/OISIC_0024306.jpg" width="100" />
@@ -101,15 +99,14 @@ Example image ISIC_0024306.jpg
 
 *left: the unprocessed image, center: the detected lines, right: the patched image*
 
-Though improving the patch function will lead to better results.
-
-Example image ISIC_0024320.jpg
+Example image: ISIC_0024320.jpg
 
 <p float="center">
   <img src="https://github.com/Francode77/hair_removal_ham10000/blob/main/assets/OISIC_0024320.jpg" width="100" />
   <img src="https://github.com/Francode77/hair_removal_ham10000/blob/main/assets/pISIC_0024320.jpg" width="100" /> 
   <img src="https://github.com/Francode77/hair_removal_ham10000/blob/main/assets/ISIC_0024320.jpg" width="100" />
 </p> 
+
 *Left: the unprocessed image, center: the detected lines, right: the patched image*
 
 # Limitations
