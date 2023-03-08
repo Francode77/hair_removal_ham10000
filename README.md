@@ -97,7 +97,7 @@ Example image: ISIC_0024306.jpg
   <img src="https://github.com/Francode77/hair_removal_ham10000/blob/main/assets/ISIC_0024306.jpg" width="100" />
 </p> 
 
-*left: the unprocessed image, center: the detected lines, right: the patched image*
+*Left: the unprocessed image, Center: the detected lines, Right: the patched image*
 
 Example image: ISIC_0024320.jpg
 
@@ -107,7 +107,7 @@ Example image: ISIC_0024320.jpg
   <img src="https://github.com/Francode77/hair_removal_ham10000/blob/main/assets/ISIC_0024320.jpg" width="100" />
 </p> 
 
-*Left: the unprocessed image, center: the detected lines, right: the patched image*
+*Left: the unprocessed image, Center: the detected lines, Right: the patched image*
 
 # Limitations
 - Settings can be further improved for better results
