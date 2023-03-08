@@ -68,7 +68,7 @@ Parameters to decide whether the detections are ok to be processed
 
 # Method
 
-See my [article on medium]() for more explanation
+See my [article on medium](https://medium.com/@francode77/hair-removal-from-the-ham-dataset-2e884a423335) for more explanation
 
 1. Edge detection
 2. Line detection
