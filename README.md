@@ -18,14 +18,15 @@ This script requires the opencv library.
 # Includes
 
 `patch_hairs.ipynb` - runs the script<br>
-`functions.py` - necessary functions
+`functions.py` - functions <br>
+`config001.yml`- config file
 
 # Usage
 
 1. Open the file `patch_hairs.ipynb` from a Jupyter notebook IDE<br>
 2. Run all cells
 
-The algorithm can be tweaked if necessary<br>
+The algorithm can be tweaked if necessary, either in the notebook, or by saving different configurations in a .yml file<br>
 
 
 # Settings
@@ -41,7 +42,6 @@ r = 6
 | canny_A  | threshold1 | 
 | canny_B  | threshold2 | 
 | aperture   | aperture size for the Sobel operator | 
-| L2gradient | L2gradient  | 
 
 #### Set HoughlinesP parameters
 
