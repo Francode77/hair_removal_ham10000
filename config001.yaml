@@ -1,0 +1,28 @@
+# Run the model on the images in this path 
+image_path: ./data/HAM10000
+# preprocess into this path
+processed_image_path: ./data/processed_images
+# Declare width and height of the patches
+r: 6
+
+#Set canny parameters
+canny_A: 100
+canny_B: 100
+aperture: 3
+L2gradient: false
+
+#Set HoughlinesP parameters
+hough_method: 'cv2.HOUGH_PROBABILISTIC' 
+hough_resolution: 720   # the resolution of rho in degrees
+hough_threshold: 35    # number of required votes
+hough_min_length: 1     # the minimum line length
+hough_max_gap: 15    # maximum allowed gap
+hough_iter: 16    # number of iterations
+
+# Set Thresholds
+max_lines_cap          : 99    # Check density above this cap
+max_density_cap        : 123   # Check density history variance above this cap
+max_hist_variance      : 30    # Maximum allowed density history variance
+max_hist_variance_cap  : 5     # Even distribution below this threshold
+max_std_dev_cap        : 0.30  # Even distribution below this threshold
+max_variance_cap       : 0.10  # Even distribution below this threshold

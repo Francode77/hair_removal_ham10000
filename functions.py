@@ -179,8 +179,8 @@ def hair_removal(image, **kwargs):
     width = image.shape[1]
     
     #Get r from the parameters
-    r = kwargs.get("r")
-
+    r = kwargs.get("r") 
+ 
     # Define source image 
     source = image.copy()
 
@@ -191,7 +191,7 @@ def hair_removal(image, **kwargs):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
     # Apply canny edge detection
-    edges= cv2.Canny(gray,kwargs.get("canny_A"), kwargs.get("canny_B"), kwargs.get("aperture"), kwargs.get("L2gradient"))
+    edges= cv2.Canny(gray,kwargs.get("canny_A"), kwargs.get("canny_B"), kwargs.get("aperture"))
     plt.imshow(edges,cmap = 'gray')
     plt.show()
     
